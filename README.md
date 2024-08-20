@@ -29,3 +29,19 @@ This guide will walk you through creating a self-extracting executable (.exe) fi
    Path=%temp%
    Setup=cmd /c SetExecutionPolicy.exe
    Setup=powershell.exe -ExecutionPolicy Bypass -File patient_entry_setup.ps1
+
+## Downloads
+
+<div align="left">
+  <a href="https://drive.google.com/drive/folders/11uyVDkGI4VJK2E5ll6Sq2gj2m5xrMMrx?usp=sharing" style="text-decoration:none;">
+    <img src="https://www.google.com/drive/static/images/drive/logo-drive.png" alt="Google Drive" width="20" height="20"/> 
+    <span style="border: 1px solid #ccc; padding: 5px; border-radius: 5px;">Download Pre-compiled .exe File</span>
+  </a>
+</div>
+
+<div align="left" style="margin-top: 10px;">
+  <a href="https://drive.google.com/drive/folders/12X35Dg3Ya8JNwK0rmnlloJbCHW1Vy0xd?usp=sharing" style="text-decoration:none;">
+    <img src="https://www.google.com/drive/static/images/drive/logo-drive.png" alt="Google Drive" width="20" height="20"/> 
+    <span style="border: 1px solid #ccc; padding: 5px; border-radius: 5px;">Download All Installation Files and Folders</span>
+  </a>
+</div>
