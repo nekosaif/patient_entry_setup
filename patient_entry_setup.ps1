@@ -212,6 +212,7 @@ $buttonInstall.Add_Click({
         # Set PatientEntry.exe compatibility mode and Run as administrator
         Write-Log "Setting compatibility mode and run as administrator for PatientEntry.exe..."
         $exePath = "C:\patiententry\PatientEntry.exe"
+        $exeStartPath = "C:\patiententry\PatientEntry-start.exe"
         $registryPath = "HKCU:\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers"
 
         if (-not (Test-Path $registryPath)) {
@@ -236,7 +237,7 @@ $buttonInstall.Add_Click({
         $shortcutPath = Join-Path -Path ([Environment]::GetFolderPath("Desktop")) -ChildPath "PatientEntry.lnk"
         $WScriptShell = New-Object -ComObject WScript.Shell
         $Shortcut = $WScriptShell.CreateShortcut($shortcutPath)
-        $Shortcut.TargetPath = $exePath
+        $Shortcut.TargetPath = $exeStartPath
         $Shortcut.IconLocation = "C:\patiententry\MainArchive.ico"
         $Shortcut.Save()
 
