@@ -1,3 +1,5 @@
 @echo off
-start "" /wait "C:\PatientEntry\cleanbackup.exe"
-start "" "C:\PatientEntry\PatientEntry.exe"
+
+cd /d "C:\patiententry"
+start "" /wait "cleanbackup.exe"
+start "" "PatientEntry.exe"
